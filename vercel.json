@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "buildCommand": "cp requirements/base.txt requirements.txt && vercel build",
   "builds": [
     {
       "src": "./app.py",
       "use": "@vercel/python",
       "config": {
         "runtime": "python3.12",
-        "maxLambdaSize": "15mb"
+        "maxLambdaSize": "15mb",
+        "buildCommand": "cp requirements/base.txt requirements.txt && vercel build"
       }
     }
   ],
