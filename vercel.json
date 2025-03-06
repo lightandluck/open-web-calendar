@@ -3,7 +3,6 @@
   "buildCommand": "cp requirements/base.txt requirements.txt && vercel build",
   "functions": {
     "./app.py": {
-      "runtime": "python@3.12",
       "maxDuration": 30
     }
   },
