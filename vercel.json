@@ -17,7 +17,6 @@
     }
   ],
   "env": {
-    "FLASK_APP": "open_web_calendar.app:app",
     "PYTHONPATH": "open_web_calendar"
   }
 }
