@@ -1,15 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./app.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "app.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "./app.py",
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.12",
+        "maxLambdaSize": "15mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ],
+  "env": {
+    "FLASK_APP": "open_web_calendar.app:app",
+    "PYTHONPATH": "open_web_calendar"
+  }
 }
