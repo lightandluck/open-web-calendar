@@ -14,14 +14,14 @@ function parseDate(yyyy_mm_dd) {
 }
 
 function escapeHtml(unsafe) {
-    // from https://stackoverflow.com/a/6234804
-    return unsafe
-         .replace(/&/g, "&amp;")
-         .replace(/</g, "&lt;")
-         .replace(/>/g, "&gt;")
-         .replace(/"/g, "&quot;")
-         .replace(/'/g, "&#039;");
- }
+  // from https://stackoverflow.com/a/6234804
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
 function getQueries() {
     // from http://stackoverflow.com/a/1099670/1320237
@@ -45,9 +45,9 @@ function getQueries() {
 }
 
 function isSafeUrl(urlString) {
-    return !UNSAFE_URL_PROTOCOLS.some(function(protocol) {
-        return urlString.toLowerCase().startsWith(protocol.toLowerCase() + ":");
-    });
+  return !UNSAFE_URL_PROTOCOLS.some(function (protocol) {
+    return urlString.toLowerCase().startsWith(protocol.toLowerCase() + ':');
+  });
 }
 
 /* Create a link around the HTML text.
@@ -62,53 +62,64 @@ function makeLink(url, html) {
     return link.outerHTML;
 }
 
-
 /*
  * Download the vent ICS with a file name.
  */
 function downloadICS(event) {
-    // from https://stackoverflow.com/a/18197341/1320237
-    const element = document.createElement('a');
-    const convert = scheduler.date.date_to_str("%Y-%m-%d %H%i", false);
-    const filename = convert(event.start_date).replace(" 0000", "") +
-    " " + event.text.replace(/[/:\\]/g, "-") + ".ics";
-    let url = document.location.href.replace("/calendar.html", "/calendar.ics") + 
-        "&filename=" + encodeURIComponent(filename) + 
-        "&set_event=" + encodeURIComponent(event.ical);
-    element.setAttribute('href', url);
-    element.setAttribute('download', filename);
+  // from https://stackoverflow.com/a/18197341/1320237
+  const element = document.createElement('a');
+  const convert = scheduler.date.date_to_str('%Y-%m-%d %H%i', false);
+  const filename =
+    convert(event.start_date).replace(' 0000', '') +
+    ' ' +
+    event.text.replace(/[/:\\]/g, '-') +
+    '.ics';
+  let url =
+    document.location.href.replace('/calendar.html', '/calendar.ics') +
+    '&filename=' +
+    encodeURIComponent(filename) +
+    '&set_event=' +
+    encodeURIComponent(event.ical);
+  element.setAttribute('href', url);
+  element.setAttribute('download', filename);
 
-    element.style.display = 'none';
-    element.target = "_blank";
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+  element.style.display = 'none';
+  element.target = '_blank';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
 }
 
 /*
  * Check whether a Date is located at the start of a day.
  */
 function isStartOfDay(date) {
-    return date.getHours() == 0 && date.getMinutes() == 0 && date.getSeconds() == 0;
+  return (
+    date.getHours() == 0 && date.getMinutes() == 0 && date.getSeconds() == 0
+  );
 }
 
 /*
  * Check if the start and end are one day.
  */
 function isOneDay(start, end) {
-  return isStartOfDay(start) && isStartOfDay(end) && end - start == 24 * 60 * 60 * 1000;
+  return (
+    isStartOfDay(start) &&
+    isStartOfDay(end) &&
+    end - start == 24 * 60 * 60 * 1000
+  );
 }
 
 // from https://stackoverflow.com/a/10262019/1320237
-const isWhitespaceString = str => !str.replace(/\s/g, '').length;
-const isNotWhitespaceString = str => !isWhitespaceString(str);
+const isWhitespaceString = (str) => !str.replace(/\s/g, '').length;
+const isNotWhitespaceString = (str) => !isWhitespaceString(str);
 
 /*
  * join lines as HTML.
  * Ignore empty lines.
  */
 function joinHtmlLines(lines) {
-    return lines.filter(isNotWhitespaceString).join("<br/>")
+  return lines.filter(isNotWhitespaceString).join('<br/>');
 }
 
 /*
@@ -222,24 +233,24 @@ function showXHRError(xhr) {
 }
 
 function showEventError(error) {
-    // show an error created by app.py -> error_to_dhtmlx
-    const div = document.createElement("div");
-    // HEADING
-    const heading = document.createElement("h1");
-    heading.innerText = error.text;
-    div.appendChild(heading);
-    // LINK
-    const link = makeLink(error.url, escapeHtml(error.url));
-    div.innerHTML += link;
-    // DESCRIPTION
-    const description = document.createElement("p");
-    description.innerText = error.description;
-    div.appendChild(description);
-    // TRACEBACK
-    const traceback = document.createElement("pre");
-    traceback.innerText = error.traceback;
-    div.appendChild(traceback);
-    showError(div);
+  // show an error created by app.py -> error_to_dhtmlx
+  const div = document.createElement('div');
+  // HEADING
+  const heading = document.createElement('h1');
+  heading.innerText = error.text;
+  div.appendChild(heading);
+  // LINK
+  const link = makeLink(error.url, escapeHtml(error.url));
+  div.innerHTML += link;
+  // DESCRIPTION
+  const description = document.createElement('p');
+  description.innerText = error.description;
+  div.appendChild(description);
+  // TRACEBACK
+  const traceback = document.createElement('pre');
+  traceback.innerText = error.traceback;
+  div.appendChild(traceback);
+  showError(div);
 }
 
 function showLoader() {
@@ -336,8 +347,8 @@ function getHeader() {
 }
 
 function resetConfig() {
-    scheduler.config.header = getHeader();
-    return true;
+  scheduler.config.header = getHeader();
+  return true;
 }
 
 // If you add an action XXX here, also add icon_XXX to the calendar translations
@@ -386,11 +397,11 @@ function loadCalendar() {
     // set format of dates in the data source
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
 
-    // responsive lightbox, see https://docs.dhtmlx.com/scheduler/touch_support.html
-    scheduler.config.responsive_lightbox = true;
-    resetConfig();
-    scheduler.attachEvent("onBeforeViewChange", resetConfig);
-    scheduler.attachEvent("onSchedulerResize", resetConfig);
+  // responsive lightbox, see https://docs.dhtmlx.com/scheduler/touch_support.html
+  scheduler.config.responsive_lightbox = true;
+  resetConfig();
+  scheduler.attachEvent('onBeforeViewChange', resetConfig);
+  scheduler.attachEvent('onSchedulerResize', resetConfig);
 
     // set the skin, scheduler v7
     // see https://docs.dhtmlx.com/scheduler/skins.html#dark
@@ -427,20 +438,22 @@ function loadCalendar() {
     const date = specification["date"] ? parseDate(specification["date"]) : new Date();
     scheduler.init('scheduler_here', date, specification["tab"]);
 
-    // see https://docs.dhtmlx.com/scheduler/custom_events_content.html
-    // see https://docs.dhtmlx.com/scheduler/api__scheduler_event_bar_text_template.html
-    scheduler.templates.event_bar_text = function(start, end, event){
-        return template.plain_summary(event);
-    }
-/*    scheduler.templates.event_bar_date = function(start, end, event){
+  // see https://docs.dhtmlx.com/scheduler/custom_events_content.html
+  // see https://docs.dhtmlx.com/scheduler/api__scheduler_event_bar_text_template.html
+  scheduler.templates.event_bar_text = function (start, end, event) {
+    return template.plain_summary(event);
+  };
+  /*    scheduler.templates.event_bar_date = function(start, end, event){
       console.log("event_bar_date");
       return template.date(start, end) + template.categories(event);
     }*/
-    // see https://docs.dhtmlx.com/scheduler/custom_events_content.html
-    scheduler.templates.event_header = function(start, end, event){
-        return joinHtmlLines([template.date(start, end), template.categories(event)]);
-    };
-
+  // see https://docs.dhtmlx.com/scheduler/custom_events_content.html
+  scheduler.templates.event_header = function (start, end, event) {
+    return joinHtmlLines([
+      template.date(start, end),
+      template.categories(event),
+    ]);
+  };
 
     // tooltip
     // see https://docs.dhtmlx.com/scheduler/tooltips.html
@@ -478,27 +491,26 @@ function loadCalendar() {
         }
     });
 
-    // general style
-    scheduler.templates.event_class=function(start,end,event){
-        if (event.type == "error") {
-            showEventError(event);
-        }
-        return event["css-classes"].map(escapeHtml).join(" ");
-    };
+  // general style
+  scheduler.templates.event_class = function (start, end, event) {
+    if (event.type == 'error') {
+      showEventError(event);
+    }
+    return event['css-classes'].map(escapeHtml).join(' ');
+  };
 
     // set agenda date
     scheduler.templates.agenda_date = scheduler.templates.month_date;
 
-    /* load the events */
-    scheduler.attachEvent("onLoadError", function(xhr) {
-        disableLoader();
-        console.log("could not load events");
-        console.log(xhr);
-        showXHRError(xhr);
-    });
+  /* load the events */
+  scheduler.attachEvent('onLoadError', function (xhr) {
+    disableLoader();
+    console.log('could not load events');
+    console.log(xhr);
+    showXHRError(xhr);
+  });
 
-    scheduler.attachEvent("onXLE", disableLoader);
-
+  scheduler.attachEvent('onXLE', disableLoader);
 
     //requestJSON(schedulerUrl, loadEventsOnSuccess, loadEventsOnError);
     scheduler.setLoadMode("day");
@@ -509,7 +521,7 @@ function loadCalendar() {
     //dp.setTransactionMode("REST");
     //dp.init(scheduler);
 
-    setLoader();
+  setLoader();
 
     // set the actions we can use when clicking an event.
     // see https://docs.dhtmlx.com/scheduler/customizing_edit_select_bars.html
@@ -559,12 +571,12 @@ var onCalendarInitialized = onCalendarInitialized || function() {};
  * see https://docs.dhtmlx.com/scheduler/agenda_view.html
  */
 
-scheduler.date.agenda_start = function(date){
+scheduler.date.agenda_start = function (date) {
   return scheduler.date.month_start(new Date(date));
 };
 
-scheduler.date.add_agenda = function(date, inc){
-  return scheduler.date.add(date, inc, "month");
+scheduler.date.add_agenda = function (date, inc) {
+  return scheduler.date.add(date, inc, 'month');
 };
 
 /* Customize the week view
@@ -572,35 +584,41 @@ scheduler.date.add_agenda = function(date, inc){
  * See https://docs.dhtmlx.com/scheduler/custom_views.html
  */
 
-scheduler.date.get_week_end=function(start_date){
-  return scheduler.date.add(start_date, specification["start_of_week"] == "work" ? 5 : 7,"day");
-}
+scheduler.date.get_week_end = function (start_date) {
+  return scheduler.date.add(
+    start_date,
+    specification['start_of_week'] == 'work' ? 5 : 7,
+    'day'
+  );
+};
 
 /* Customize the month view so the work week is displayed.
  *
  * See
  */
 
-scheduler.ignore_month = function(date){
+scheduler.ignore_month = function (date) {
   // 0 refers to Sunday, 6 - to Saturday
   if (date.getDay() == 6 || date.getDay() == 0) {
-    return specification["start_of_week"] == "work";
+    return specification['start_of_week'] == 'work';
     //hides Saturdays and Sundays
   }
 };
 
-scheduler.attachEvent("onBeforeViewChange", function(old_mode, old_date, mode, date){
+scheduler.attachEvent(
+  'onBeforeViewChange',
+  function (old_mode, old_date, mode, date) {
     // see https://docs.dhtmlx.com/scheduler/api__scheduler_onbeforeviewchange_event.html
     // see https://forum.dhtmlx.com/t/scheduler-date-add-day-not-getting-called/35633
     // see https://docs.dhtmlx.com/scheduler/day_view.html#comment-6411743964
-    if (mode == "day" && specification["start_of_week"] == "work") {
+    if (mode == 'day' && specification['start_of_week'] == 'work') {
       if (date.getDay() == 6) {
         // Saturday, we come from Friday and go to Monday
-        scheduler.setCurrentView(scheduler.date.add(date, 2, "day"));
+        scheduler.setCurrentView(scheduler.date.add(date, 2, 'day'));
         return false;
       } else if (date.getDay() == 0) {
         // Sunday, we come from Monday and go to Friday
-        scheduler.setCurrentView(scheduler.date.add(date, -2, "day"));
+        scheduler.setCurrentView(scheduler.date.add(date, -2, 'day'));
         return false;
       }
     }
