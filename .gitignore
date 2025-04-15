@@ -114,6 +114,7 @@ tmp
 .vercel
 *save
 open_web_calendar/_version.py
+.scratch
 
 # mkdocs
 site/
