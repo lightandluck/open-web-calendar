@@ -1,0 +1,22 @@
+{
+  "css": ".tooltip a, .dhx_cal_qi_content a {color: white; border-bottom: 1px solid #ffcd03; text-decoration: none; line-height: 25px;} .dhtmlXTooltip.tooltip {line-height: 30px;} .tooltip a:hover, .dhx_cal_qi_content a:hover  {background: #fff; color: #000003;} .dhx_cal_event_line {background: #FFCD03;} .dhx_cal_tab {color: #FFCD03; border: 1px solid #FFCD03;} .dhx_cal_tab.active {background: #FFCD03; color: black;} .dhx_cal_tab:hover {background: #FFCD03; color: black;} .dhx_cal_today_button {border: 1px solid #FFCD03; color: #FFCD03;} .dhx_cal_today_button:hover {background: #FFCD03; border: 1px solid #FFCD03;} .dhx_cal_event_clear::before, .dhx_cal_qi_tcontent::before {background: #FFCD03 ;} .dhx_qi_big_icon, .dhx_qi_big_icon:hover {color: #FFCD03;} .dhx_menu_icon {background-color: #FFCD03;}",
+  "event_url_location": "{location}",
+  "hour_format": "%g:%i %a",
+  "prefer_browser_language": true,
+  "skin": "contrast-black",
+  "start_of_week": "su",
+  "style-event-status-cancelled": true,
+  "target": "_blank",
+  "title": "DWeb Calendar",
+  "url": [
+    "https://api.lu.ma/ics/get?entity=calendar&id=cal-7iVMZ4JmmJwQtYl",
+    "https://api.lu.ma/ics/get?entity=calendar&id=cal-V7T1xhMDfSgBirO",
+    "https://api.lu.ma/ics/get?entity=calendar&id=cal-PXleYN54pnSvBsl",
+    "https://api.lu.ma/ics/get?entity=calendar&id=cal-51Wm01X1bBkAAEU",
+    "https://calendar.proton.me/api/calendar/v1/url/Zz0-MQwZUS0DqO8aIdwwgHoTJI866mzpuHXieHsGquKKEsqlYwyRPlqxXkSvosnKqUw-gdsdObl_TDxTLPRQzQ==/calendar.ics?CacheKey=63frHLNShxvidLjv7t0ovw%3D%3D&PassphraseKey=BoOivGbdfR8OgemQ_FDtyZF1YNvE3KiwayryXuebwCA%3D",
+    "https://calendar.proton.me/api/calendar/v1/url/Co39uorTqVkDtErM9T7rcGE5Vp_6s9AcH6TEYNqsySNfs4MEmvlZ05w4oRpERhguGTLUUBP_uWQyN7xzxTUAvQ==/calendar.ics?CacheKey=SOR37hoE3ZRyPPPdjqTL0g%3D%3D&PassphraseKey=-XC5_1YjQqvhZhjM0hLNE-Hyyie_3lzsbcOdmDcdElg%3D",
+    "https://mobilizon.us/@dwebny/feed/ics",
+    "https://vagancio.partidopirata.com.ar/feed/ics?tags=dweb,dwebsudaka,fediverso,fedifiesta&show_recurrent=true",
+    "https://calendar.proton.me/api/calendar/v1/url/8i_GvvsVceRifYPAfcdElKU1L8ZGPzCskEwE5krB6goJiUmaeJwxnQEbtDEaWPna8Psf7-_ylE_ZaPI8jkkssg==/calendar.ics?CacheKey=XJIYKRfgekBQ0zw8BWyEbQ%3D%3D&PassphraseKey=DDpUWToMxE35y-RUNR3ZwQopQYJW50wZlYZtHV-5pK0%3D"
+  ]
+}

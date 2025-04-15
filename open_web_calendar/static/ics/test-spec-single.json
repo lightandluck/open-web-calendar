@@ -1,0 +1,12 @@
+{
+  "css": ".tooltip a, .dhx_cal_qi_content a {color: white; border-bottom: 1px solid #ffcd03; text-decoration: none; line-height: 25px;} .dhtmlXTooltip.tooltip {line-height: 30px;} .tooltip a:hover, .dhx_cal_qi_content a:hover  {background: #fff; color: #000003;} .dhx_cal_event_line {background: #FFCD03;} .dhx_cal_tab {color: #FFCD03; border: 1px solid #FFCD03;} .dhx_cal_tab.active {background: #FFCD03; color: black;} .dhx_cal_tab:hover {background: #FFCD03; color: black;} .dhx_cal_today_button {border: 1px solid #FFCD03; color: #FFCD03;} .dhx_cal_today_button:hover {background: #FFCD03; border: 1px solid #FFCD03;} .dhx_cal_event_clear::before, .dhx_cal_qi_tcontent::before {background: #FFCD03 ;} .dhx_qi_big_icon, .dhx_qi_big_icon:hover {color: #FFCD03;} .dhx_menu_icon {background-color: #FFCD03;}",
+  "event_url_location": "{location}",
+  "hour_format": "%g:%i %a",
+  "prefer_browser_language": true,
+  "skin": "contrast-black",
+  "start_of_week": "su",
+  "style-event-status-cancelled": true,
+  "target": "_blank",
+  "title": "DWeb Calendar",
+  "url": ["http://127.0.0.1:5000/ics/with-tags-sudaka.ics"]
+}

@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:PUBLISH
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:527@vagancio.partidopirata.com.ar
+SUMMARY:Proyección de No other land
+DTSTAMP:20250414T052926Z
+DTSTART:20250415T233000Z
+DESCRIPTION:Basel Adra\, joven activista palestino de Masafer Yatta\, en Ci
+	sjordania\, lucha\ndesde su infancia contra la expulsión masiva de su comu
+	nidad por las autoridades\nisraelíes. Documenta la erradicación a cámara l
+	enta de los pueblos de su región\nnatal\, donde los soldados desplegados p
+	or el gobierno israelí derriban las casas\ny expulsan a sus habitantes. En
+	 un momento dado\, conoce a Yuval\, un periodista\nisraelí\, que le ayuda 
+	en sus esfuerzos. Sin embargo\, el vínculo se encuentra\natravesado por un
+	a enorme desigualdad.
+URL:https://vagancio.partidopirata.com.ar/event/proyeccion-de-no-other-land
+LOCATION:Cine Select - Calle 50\, La Plata\, Partido de La Plata\, Buenos A
+	ires\, B1900TDX\, Argentina
+STATUS:CONFIRMED
+CATEGORIES:palestina,palestinalibre
+X-ALT-DESC;FMTTYPE=text/html:<p>Basel Adra, joven activista palestino de Ma
+	safer Yatta, en Cisjordania, lucha desde su infancia contra la expulsión m
+	asiva de su comunidad por las autoridades israelíes. Documenta la erradica
+	ción a cámara lenta de los pueblos de su región natal, donde los soldados 
+	desplegados por el gobierno israelí derriban las casas y expulsan a sus ha
+	bitantes. En un momento dado, conoce a Yuval, un periodista israelí, que l
+	e ayuda en sus esfuerzos. Sin embargo, el vínculo se encuentra atravesado 
+	por una enorme desigualdad.</p>
+END:VEVENT
+END:VCALENDAR
