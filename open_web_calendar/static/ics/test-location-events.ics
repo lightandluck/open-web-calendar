@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luma//DWeb Vancouver #DWebYVR//EN
+X-WR-CALNAME:DWeb Vancouver #DWebYVR
+X-WR-CALDESC:Luma Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20250429T013000Z
+DTEND:20250429T053000Z
+DTSTAMP:20250414T042133Z
+ORGANIZER;CN="Esther Jang / Seattle Community Network":MAILTO:calendar-invite@lu.ma
+UID:calev-hfSKkRoK09YUPqm@events.lu.ma
+SUMMARY:SCN Hack Night
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.meetup.com/seattle-tacoma-community-network/events/wmt
+ hzsyhcfbcc/
+SEQUENCE:166767693
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250429T190000Z
+DTEND:20250430T010000Z
+DTSTAMP:20250414T042133Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-JZBob614yyd9rDz@events.lu.ma
+SUMMARY:Vancouver Hack Day - Personal AI
+DESCRIPTION:Get up-to-date information at: https://lu.ma/m24ep4z2\n\nAddres
+ s:\nZ-Space\nVancouver, British Columbia\nCanada\n\nHosted by David & Boris
+  Mann
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:166767693
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
