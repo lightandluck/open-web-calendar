@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luma//DWeb Vancouver #DWebYVR//EN
+X-WR-CALNAME:DWeb Vancouver #DWebYVR
+X-WR-CALDESC:Luma Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20250415T020000Z
+DTEND:20250415T043000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-u7zxf1CEhbBGGD0@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting, March 2025
+DESCRIPTION:Get up-to-date information at: https://lu.ma/lv1ak6ow\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David, Boris Mann & Emily McGill
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

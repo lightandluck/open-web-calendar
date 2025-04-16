@@ -1,0 +1,267 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luma//DWeb Vancouver #DWebYVR//EN
+X-WR-CALNAME:DWeb Vancouver #DWebYVR
+X-WR-CALDESC:Luma Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20250306T020000Z
+DTEND:20250306T043000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-u7zxf1CEhbBGGD0@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting, March 2025
+DESCRIPTION:Get up-to-date information at: https://lu.ma/lv1ak6ow\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David, Boris Mann & Emily McGill
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250311T020000Z
+DTEND:20250311T030000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="Colin Rinta":MAILTO:calendar-invite@lu.ma
+UID:evt-bqyPsSQMBwnX3pt@events.lu.ma
+SUMMARY:D:Food Web 2149
+DESCRIPTION:Get up-to-date information at: https://lu.ma/ioge7egh\n\nAddres
+ s:\n505 Hamilton St\nBuzz 301\nVancouver, British Columbia\nCanada\n\nHoste
+ d by Colin Rinta
+LOCATION:505 Hamilton St, Vancouver, BC V6B 1T1, Canada
+GEO:49.28205;-123.111452
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250322T160000Z
+DTEND:20250324T003000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="ATmosphereConf":MAILTO:calendar-invite@lu.ma
+UID:evt-NtVLCAzCGQNnBhZ@events.lu.ma
+SUMMARY:ATmosphereConf Seattle 2025
+DESCRIPTION:Get up-to-date information at: https://lu.ma/lo5mlrw3\n\nAddres
+ s:\nOak Hall (OAK)\nSeattle, Washington\nUnited States\n\nHosted by ATmosph
+ ereConf
+LOCATION:Oak Hall (OAK), 4295 Little Canoe Channel NE, Seattle, WA 98195, U
+ SA
+GEO:47.659465;-122.305143
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250328T010000Z
+DTEND:20250328T040000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="Rachael Ashe & Dawn Walker":MAILTO:calendar-invite@lu.ma
+UID:calev-RFiTpgNb5grLB5m@events.lu.ma
+SUMMARY:Workshop for artists: Why it’s time to move off big tech social med
+ ia
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.eventbrite.ca/e/workshop-for-artists-why-its-time-to-m
+ ove-off-big-tech-social-media-tickets-1268174286429
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250329T013000Z
+DTEND:20250329T053000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="Esther Jang / Seattle Community Network":MAILTO:calendar-invite@lu.ma
+UID:calev-hfSKkRoK09YUPqm@events.lu.ma
+SUMMARY:SCN Hack Night
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.meetup.com/seattle-tacoma-community-network/events/wmt
+ hzsyhcfbcc/
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250329T190000Z
+DTEND:20250330T010000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-JZBob614yyd9rDz@events.lu.ma
+SUMMARY:Vancouver Hack Day - Personal AI
+DESCRIPTION:Get up-to-date information at: https://lu.ma/m24ep4z2\n\nAddres
+ s:\nZ-Space\nVancouver, British Columbia\nCanada\n\nHosted by David & Boris
+  Mann
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250409T010000Z
+DTEND:20250409T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-bmr71KtoXKfqrxy@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting, April 2025
+DESCRIPTION:Get up-to-date information at: https://lu.ma/8l7lmq94\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David, Emily McGill & Chad Kohalyk
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250413T200000Z
+DTEND:20250414T013000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="Emily McGill":MAILTO:calendar-invite@lu.ma
+UID:evt-9ClGU03JI2gaQF6@events.lu.ma
+SUMMARY:coFood x DWeb Garden Kickoff! Work Party & Potluck
+DESCRIPTION:Get up-to-date information at: https://lu.ma/jp988fpb\n\nAddres
+ s:\n265 E 4th Ave\nVancouver, British Columbia\nCanada\n\nHosted by Emily M
+ cGill
+LOCATION:265 E 4th Ave, Vancouver, BC V5T 4S2, Canada
+GEO:49.26742;-123.09916
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250430T010000Z
+DTEND:20250430T040000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="Boris Mann":MAILTO:calendar-invite@lu.ma
+UID:evt-sVxS0pYjd5XBxRR@events.lu.ma
+SUMMARY:ATProto Vancouver
+DESCRIPTION:Get up-to-date information at: https://lu.ma/e96fv1p3\n\nAddres
+ s:\nZ-Space\nVancouver, British Columbia\nCanada\n\nHosted by Boris Mann
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250508T010000Z
+DTEND:20250508T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-qCWLZ7Mu2c4PCyG@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/czej7kul\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250604T010000Z
+DTEND:20250604T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-2X1FNxvw3cYtWnh@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/akw0wstp\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250709T010000Z
+DTEND:20250709T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-i4RpF5ipZsTGICR@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/plrtmbc1\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250806T010000Z
+DTEND:20250806T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-n2nRdealTvzSO7Y@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/gnwu1gar\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250903T010000Z
+DTEND:20250903T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-zHnMtx2Q5IrT1sf@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/4xhci27i\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251008T010000Z
+DTEND:20251008T033000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-vDbVt3B9LB2BTZN@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/0qx3hr3k\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251105T020000Z
+DTEND:20251105T043000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-LwlaqimjYv3aNjr@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/oy1ij7d8\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
