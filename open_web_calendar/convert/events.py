@@ -133,8 +133,11 @@ class ConvertToEvents(ConversionStrategy):
         if 'X-ALT-DESC' not in calendar_event:
             plain_text = calendar_event.get('DESCRIPTION', '')
             if plain_text:
+                # First replace newlines with <br />
+                text_with_br = plain_text.replace('\n', '<br />')
+                # Then handle URLs
                 pattern = r'(https?://[\w\-\.]+\.[a-zA-Z]{2,}(?:/[\w\-\./\?=%&#+]*)?)'
-                html_description = f"<p>{re.sub(pattern, r'<a href="\1">\1</a>', plain_text)}</p><hr />"
+                html_description = f"<p>{re.sub(pattern, r'<a href="\1">\1</a>', text_with_br)}</p><hr />"
                 calendar_event.add('X-ALT-DESC', vText(html_description), parameters={'FMTTYPE': 'text/html'})
 
         # if start and end are dates and the same, add one day to end
