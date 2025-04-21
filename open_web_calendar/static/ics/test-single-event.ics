@@ -8,19 +8,16 @@ X-PUBLISHED-TTL:PT12H
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-DTSTART:20250415T020000Z
-DTEND:20250415T043000Z
+DTSTART:20250428T010000Z
+DTEND:20250428T040000Z
 DTSTAMP:20250416T222448Z
-ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
-UID:evt-u7zxf1CEhbBGGD0@events.lu.ma
-SUMMARY:DWebYVR Planning Meeting, March 2025
-DESCRIPTION:Get up-to-date information at: https://lu.ma/lv1ak6ow\n\nAddres
- s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
- e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
- David, Boris Mann & Emily McGill
-LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
- R1, Canada
-GEO:49.282003;-123.111508
+ORGANIZER;CN="Rachael Ashe & Dawn Walker":MAILTO:calendar-invite@lu.ma
+UID:calev-RFiTpgNb5grLB5m@events.lu.ma
+SUMMARY:Workshop for artists: Why it’s time to move off big tech social med
+ ia
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.eventbrite.ca/e/workshop-for-artists-why-its-time-to-m
+ ove-off-big-tech-social-media-tickets-1268174286429
 SEQUENCE:167005488
 STATUS:TENTATIVE
 END:VEVENT
