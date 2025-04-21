@@ -13,7 +13,7 @@ import zoneinfo
 from http import HTTPStatus
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Optional
-from urllib.parse import ParseResult, urlparse
+from urllib.parse import ParseResult, urlparse, quote
 
 import caldav
 import icalendar
@@ -135,7 +135,8 @@ def set_js_headers(response):
         response.headers["Content-Type"] = "text/calendar"
     filename = request.args.get("filename")
     if filename:
-        response.headers.add("Content-Disposition", "attachment", filename=filename)
+        encoded_filename = quote(filename)
+        response.headers.add("Content-Disposition", f"attachment; filename=\"{encoded_filename}\"")
     return response
 
 
