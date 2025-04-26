@@ -36,4 +36,17 @@ DTEND;VALUE=DATE:20250425
 SEQUENCE:0
 STATUS:CONFIRMED
 END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250425T020000Z
+DTEND:20250425T060000Z
+DTSTAMP:20250426T033216Z
+ORGANIZER;CN="stickykeys music":MAILTO:calendar-invite@lu.ma
+UID:calev-gXFf58pn8PnQEHD@events.lu.ma
+SUMMARY:Venue Co-op Design Jam
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.eventbrite.ca/e/venue-co-op-design-jam-tickets-1302421
+ 330259?utm_experiment=test_share_listing&aff=ebdsshios
+SEQUENCE:167801536
+STATUS:TENTATIVE
+END:VEVENT
 END:VCALENDAR

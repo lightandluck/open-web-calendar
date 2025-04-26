@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luma//DWeb Vancouver #DWebYVR//EN
+X-WR-CALNAME:DWeb Vancouver #DWebYVR
+X-WR-CALDESC:Luma Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20250425T020000Z
+DTEND:20250425T060000Z
+DTSTAMP:20250426T033216Z
+ORGANIZER;CN="stickykeys music":MAILTO:calendar-invite@lu.ma
+UID:calev-gXFf58pn8PnQEHD@events.lu.ma
+SUMMARY:Venue Co-op Design Jam
+DESCRIPTION:Find more information on https://lu.ma/dwebyvr
+LOCATION:https://www.eventbrite.ca/e/venue-co-op-design-jam-tickets-1302421
+ 330259?utm_experiment=test_share_listing&aff=ebdsshios
+SEQUENCE:167801536
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20250412T160000Z
+DTEND:20250412T170000Z
+DTSTAMP:20250426T202448Z
+ORGANIZER;CN="The Department of Decentralization":MAILTO:calendar-invite@lu.ma
+UID:calev-WeB3H2u0VFyjI7o@events.lu.ma
+SUMMARY:Protocol Berg v2
+DESCRIPTION:Find more information on https://lu.ma/causalislands
+LOCATION:https://protocol.berlin/
+SEQUENCE:167862288
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
