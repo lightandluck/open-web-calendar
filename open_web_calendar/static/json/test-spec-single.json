@@ -8,5 +8,5 @@
   "style-event-status-cancelled": true,
   "target": "_blank",
   "title": "DWeb Calendar",
-  "url": ["http://127.0.0.1:5000/ics/test-single-event.ics"]
+  "url": ["http://127.0.0.1:5000/ics/test-locations.ics"]
 }

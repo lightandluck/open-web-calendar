@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Luma//DWeb Vancouver #DWebYVR//EN
+X-WR-CALNAME:DWeb Vancouver #DWebYVR
+X-WR-CALDESC:Luma Calendar
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20250405T020000Z
+DTEND:20250405T043000Z
+DTSTAMP:20250416T222448Z
+ORGANIZER;CN="David":MAILTO:calendar-invite@lu.ma
+UID:evt-LwlaqimjYv3aNjr@events.lu.ma
+SUMMARY:DWebYVR Planning Meeting
+DESCRIPTION:Get up-to-date information at: https://lu.ma/oy1ij7d8\n\nAddres
+ s:\nZ-Space\nHow to get into Z-Space https://wiki.z-space.ca/s/1d4ea416-983
+ e-4fd8-a69c-b8b30204bf77\nVancouver, British Columbia\nCanada\n\nHosted by 
+ David
+LOCATION:Z-Space, 505 Hamilton St Unit 301 - 302 - 303, Vancouver, BC V6B 2
+ R1, Canada
+GEO:49.282003;-123.111508
+SEQUENCE:167005488
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:eJv_FKPa-Eip2SqZoE90YaNaFnX5@proton.me
+DTSTAMP:20250425T185517Z
+DESCRIPTION:This is for testing the location function using an address in t
+ he location field
+SUMMARY:Test Location
+LOCATION:300 Funston Ave\, San Francisco\, CA 94118
+DTSTART;VALUE=DATE:20250424
+DTEND;VALUE=DATE:20250425
+SEQUENCE:0
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
