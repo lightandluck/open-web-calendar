@@ -62,7 +62,16 @@ class ConvertToICS(ConversionStrategy):
         if only_event:
             for event in calendar.events:
                 calendar.subcomponents.remove(event)
-            calendar.add_component(Event.from_ical(only_event))
+            # Create a clean event instead of using the preserved iCalendar data
+            original_event = Event.from_ical(only_event)
+            clean_event = Event()
+            # Copy essential properties
+            for prop in ["DTSTART", "DTEND", "DTSTAMP", "SUMMARY", "DESCRIPTION", "LOCATION", 
+                        "URL", "UID", "SEQUENCE", "STATUS", "CATEGORIES", "COLOR", 
+                        "X-APPLE-CALENDAR-COLOR", "ORGANIZER"]:
+                if prop in original_event:
+                    clean_event[prop] = original_event[prop]
+            calendar.add_component(clean_event)
         return Response(calendar.to_ical(), mimetype="text/calendar")
 
 
