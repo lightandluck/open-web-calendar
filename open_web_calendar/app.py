@@ -322,7 +322,9 @@ for folder_path in STATIC_FOLDER_PATH.iterdir():
 @app.route("/index.html")
 @allowed_hosts.limit()
 def serve_index():
-    specification = get_specification()
+    spec_url = "https://gitlab.com/lightandluck/open-web-calendar/-/snippets/4827957/raw/main/dweb-calendar-spec.json"
+    query = ImmutableMultiDict([('specification_url', spec_url)])
+    specification = get_specification(query)
     return render_app_template("index.html", specification)
 
 
