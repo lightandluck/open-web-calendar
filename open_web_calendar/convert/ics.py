@@ -65,13 +65,18 @@ class ConvertToICS(ConversionStrategy):
             # Create a clean event instead of using the preserved iCalendar data
             original_event = Event.from_ical(only_event)
             clean_event = Event()
-            # Copy essential properties
+            # Copy essential properties - Explicity excluding 'RECURRENCE-ID' because it would cause the event to be imported as recurring when it is not.
             for prop in ["DTSTART", "DTEND", "DTSTAMP", "SUMMARY", "DESCRIPTION", "LOCATION", 
                         "URL", "UID", "SEQUENCE", "STATUS", "CATEGORIES", "COLOR", 
                         "X-APPLE-CALENDAR-COLOR", "ORGANIZER"]:
                 if prop in original_event:
                     clean_event[prop] = original_event[prop]
             calendar.add_component(clean_event)
+
+            # Remove RDATE from timezones - this is a workaround for events that are imported as recurring when they are not. Removing 'RECURRENCE-ID' seemed to be enough. Leaving this here for reference, in case it's needed.
+            # calendar.timezones[0].standard[1].pop('RDATE', None)
+            # calendar.timezones[0].standard[0].pop('RDATE', None)
+            # calendar.timezones[0].daylight[0].pop('RDATE', None)
         return Response(calendar.to_ical(), mimetype="text/calendar")
 
 
