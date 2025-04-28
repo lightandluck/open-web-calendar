@@ -91,7 +91,7 @@ SPDX-License-Identifier: GPL-2.0-only
         </div>
         <div class="status-window">
             <a class="item" id="errorStatusIcon" href="javascript:toggleErrorWindow();">!</a>
-            <a class="item" id="infoIcon" href="/about.html{{ get_query_string() | safe }}" target="{{ specification['target'] }}">?</a>
+            <a style="display: none;" class="item" id="infoIcon" href="/about.html{{ get_query_string() | safe }}" target="{{ specification['target'] }}">?</a>
         </div>
     </body>
 </html>

@@ -40,8 +40,9 @@ SPDX-License-Identifier: GPL-2.0-only
         </style>
     </head>
     <body>
-        <nav id="navigation" class="dark">
-            <div class="navcontent">
+        <nav style="display: none;" id="navigation" class="dark">
+            <h1>DWeb Calendar</h1>
+            <div style="display: none;" class="navcontent">
                 <a id="navigate-previous" class="needs-previous-section"></a>
                 <h1><a id="currect-section" ></a></h1>
                 <ul id="sections-dropdown">
@@ -50,7 +51,7 @@ SPDX-License-Identifier: GPL-2.0-only
             </div>
         </nav>
         <div class="flexcontainer">
-        <main>
+        <main style="display: none;">
             <section id="configure-urls">  
                 <h2>{{ html("project-name") }}</h2>
                 <p>
@@ -444,10 +445,10 @@ SPDX-License-Identifier: GPL-2.0-only
         </main>
         <aside>
             <div id="calendar-code-execution"></div>
-            <div id="height-slider">↕ <span id="calendar-height"></span> ↕</div>
+            <div style="display: none;" id="height-slider">↕ <span id="calendar-height"></span> ↕</div>
         </aside>
         </div>
         <div id="overlay"></div>
-        <div class="button" id="width-slider">↔</div>
+        <div style="display: none;" class="button" id="width-slider">↔</div>
     </body>
 </html>

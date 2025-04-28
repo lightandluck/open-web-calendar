@@ -4,7 +4,40 @@
  * SPDX-License-Identifier: GPL-2.0-only
  */
 
-body, .flexcontainer {
+:root {
+  --primary-color: #000000;
+  --secondary-color: #4f4f0e;
+  --background-color: #ffffff;
+  --accent-color: #fa9801;
+  --bottom-slider-height: calc(100% - 600px);
+  --minimum-bottom-slider-height: 1.5em;
+  --nav-height: 7em;
+  --maximum-height-of-calendar: 1200px;
+  --minimum-height-of-calendar: 200px;
+  --total-document-height: 100%;
+  --border-radius: 0.66em;
+}
+
+.dark {
+  --primary-color: #fbfd31;
+  --secondary-color: #cfea29;
+  --background-color: #000000;
+  --accent-color: #fa9801;
+  color: var(--primary-color);
+  background: var(--background-color);
+}
+
+body,
+html {
+  color: var(--primary-color);
+  background: var(--background-color);
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+.flexcontainer {
   display: flex;
   flex-direction: column;
 }
@@ -32,10 +65,11 @@ body, .flexcontainer {
   color: var(--primary-color);
 }
 
-section, .navcontent {
-    padding: 1em;
-    margin-right: auto;
-    margin-left: auto;
+main, section,
+.navcontent {
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 main {
@@ -52,26 +86,25 @@ section {
   flex: 1 1 auto;
 }
 
-
 .code {
-    padding: 1em;
-    background: var(--secondary-color);
-    color: var(--background-color);
-    border-radius: var(--border-radius);
-    overflow-y: hidden;
-    overflow-x: auto;
+  padding: 1em;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: var(--border-radius);
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
-
-.calendar-url-input, #calendar-title{
-    width: 100%;
+.calendar-url-input,
+#calendar-title {
+  width: 100%;
 }
 
 #open-web-calendar {
-    width: 100%;
-    height: 100%;
-    min-height: var(--minimum-height-of-calendar);
-    flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-height: var(--minimum-height-of-calendar);
+  flex: 1 1 auto;
 }
 
 #css-input {
@@ -94,7 +127,8 @@ section {
   display: inline-block;
 }
 
-#map-link-location, #map-link-geo {
+#map-link-location,
+#map-link-geo {
   /* credits to https://css-tricks.com/styling-texty-inputs-only/ */
   margin: 2px;
   width: 100%;
@@ -163,6 +197,9 @@ nav ul {
 
 nav h1 {
   font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em 0;
 }
 
 #currect-section {
@@ -172,7 +209,8 @@ nav h1 {
   display: inline-block;
 }
 
-#navigate-next, #navigate-previous {
+#navigate-next,
+#navigate-previous {
   color: var(--secondary-color);
   vertical-align: middle;
   display: block;
@@ -181,25 +219,23 @@ nav h1 {
 }
 
 #navigate-previous:before {
-  content: "⬅ ";
+  content: '⬅ ';
 }
 
 #navigate-next:after {
-  content: " ➡";
+  content: ' ➡';
 }
 
-
-#navigate-next:hover, #navigate-previous:hover {
+#navigate-next:hover,
+#navigate-previous:hover {
   color: var(--primary-color);
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: var(--border-radius);
-} 
-
-
+}
 
 #bottom-done-link:before {
-  content: "✓ ";
+  content: '✓ ';
 }
 
 .bottom-navigation {
@@ -207,7 +243,24 @@ nav h1 {
   justify-content: space-between;
 }
 
-.no-previous-section .needs-previous-section, .no-next-section .needs-next-section {
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--background-color);
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.no-previous-section .needs-previous-section,
+.no-next-section .needs-next-section {
   visibility: hidden;
 }
 
@@ -239,7 +292,9 @@ nav h1 {
   overflow: hidden;
   /* see https://stackoverflow.com/a/43275544/1320237 */
   /* touch-action: none; */
-  max-height: calc(var(--maximum-height-of-calendar) - var(--minimum-height-of-calendar));
+  max-height: calc(
+    var(--maximum-height-of-calendar) - var(--minimum-height-of-calendar)
+  );
 }
 
 #overlay {
@@ -302,7 +357,9 @@ aside {
   flex-direction: row;
 }
 
-#add-url-username, #add-url-password, #add-url-credentials-label {
+#add-url-username,
+#add-url-password,
+#add-url-credentials-label {
   flex: 1 1 auto;
   width: 33%;
 }
@@ -335,12 +392,13 @@ aside {
   padding: 1em;
 }
 
-#calendar-urls li input, #calendar-urls li button {
+#calendar-urls li input,
+#calendar-urls li button {
   height: 2em;
   vertical-align: middle;
 }
 
-#select-sections   {
+#select-sections {
   text-align: center;
 }
 
@@ -369,12 +427,13 @@ aside {
     --bottom-slider-height: 1.5em;
     --maximum-height-of-calendar: calc(100vh - var(--nav-height));
   }
-  aside, main {
+  aside,
+  main {
     /* display: inline-block; */
-    height: var(--maximum-height-of-calendar);
+    /* height: var(--maximum-height-of-calendar); */
+    height: 100%;
     margin: 0em;
     padding: 0em;
-
   }
   .flexcontainer {
     flex-direction: row;
@@ -385,9 +444,9 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
-  aside, #height-slider  {
+  aside,
+  #height-slider {
     width: calc(100% - var(--main-width));
   }
   nav {
@@ -404,7 +463,7 @@ aside {
     bottom: 0em; */
     max-height: calc(100% - var(--minimum-height-of-calendar));
     width: 100%;
-  }   
+  }
   #width-slider {
     display: block;
     position: fixed;
