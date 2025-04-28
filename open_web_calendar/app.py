@@ -14,6 +14,7 @@ from http import HTTPStatus
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Optional
 from urllib.parse import ParseResult, urlparse, quote
+from werkzeug.datastructures import ImmutableMultiDict
 
 import caldav
 import icalendar
