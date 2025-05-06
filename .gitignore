@@ -115,6 +115,7 @@ tmp
 *save
 open_web_calendar/_version.py
 .scratch
+.DS_Store
 
 # mkdocs
 site/
