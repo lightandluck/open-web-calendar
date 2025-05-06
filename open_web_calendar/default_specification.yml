@@ -22,7 +22,7 @@ url:
 title: "Open Web Calendar"
 
 ## The favicon of the page
-favicon: "/static/img/logo/owc.svg"
+favicon: "/img/favicon.svg"
 
 ## The starting date of the calendar view in YYYY-MM-DD format
 ## Leave empty for today
