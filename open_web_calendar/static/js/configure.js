@@ -318,7 +318,7 @@ var actions = {
  * see https://stackoverflow.com/a/52855084/1320237
  */
 var IS_TOUCH_SCREEN = window.matchMedia('(pointer: coarse)').matches;
-var HAS_TOOLTIP = !IS_TOUCH_SCREEN;
+var HAS_TOOLTIP = false;
 
 function loadCalendar() {
   /* Format the time of the hour.
