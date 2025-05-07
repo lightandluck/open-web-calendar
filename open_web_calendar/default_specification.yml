@@ -24,6 +24,9 @@ title: "Open Web Calendar"
 ## The favicon of the page
 favicon: "/img/favicon.svg"
 
+## The image for the open graph
+og_image: "/img/DWeb-calendar-meta-image-B.jpg"
+
 ## The starting date of the calendar view in YYYY-MM-DD format
 ## Leave empty for today
 date: ""
