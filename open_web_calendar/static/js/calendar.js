@@ -368,7 +368,7 @@ const actions = {
  * see https://stackoverflow.com/a/52855084/1320237
  */
 const IS_TOUCH_SCREEN = window.matchMedia("(pointer: coarse)").matches;
-const CAN_HAVE_TOOLTIP = !IS_TOUCH_SCREEN;
+const CAN_HAVE_TOOLTIP = false;
 
 
 function loadCalendar() {
