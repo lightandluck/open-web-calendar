@@ -291,6 +291,19 @@ function getHeader() {
         return useHeaderElement[element.id || element] != false; // null for absent
       });
     }
+
+    const submitEventLink = {
+      id: "submit_event",
+      html: '<a href="https://airtable.com/appTI5ffWtVBghxjJ/pagtSqKejqCT4bI2T/form" class="header-link" target="_blank">Submit Event</a>',
+      css: "header-link",
+    };
+
+    const subscribeLink = {
+      id: "subscribe",
+      html: '<a href="/calendar.ics" class="header-link">Subscribe</a>',
+      css: "header-link",
+    };
+
     const menu = {
         id: "menu",
         /* the HTML for the menu is from here:
@@ -337,8 +350,10 @@ function getHeader() {
             "day",
             "week",
             "month",
+            submitEventLink,
             "agenda",
             "date",
+            subscribeLink,
             "prev",
             "today",
             "next"
