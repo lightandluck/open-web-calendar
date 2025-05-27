@@ -281,6 +281,9 @@ def get_calendar(ext):
         except:
             return json_error()
     if ext == "ics":
+        spec_url = "https://gitlab.com/lightandluck/open-web-calendar/-/snippets/4827957/raw/main/dweb-calendar-spec.json"
+        query = ImmutableMultiDict([('specification_url', spec_url)])
+        specification = get_specification(query)
         return get_conversion(ConvertToICS, specification)
     if ext == "html":
         template_name = specification["template"]
